@@ -1,0 +1,10 @@
+"C:\Program Files\JetBrains\CLion 2017.3.4\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "E:\Contest\Code Chef\March Challenge 2018 DIV 2"
+CMake Error at CMakeLists.txt:10 (add_executable):
+  add_executable cannot create target "Minion" because another target with
+  the same name already exists.  The existing target is an executable created
+  in source directory "E:/Contest/Code Chef/March Challenge 2018 DIV 2".  See
+  documentation for policy CMP0002 for more details.
+
+
+-- Configuring incomplete, errors occurred!
+See also "E:/Contest/Code Chef/March Challenge 2018 DIV 2/cmake-build-debug/CMakeFiles/CMakeOutput.log".

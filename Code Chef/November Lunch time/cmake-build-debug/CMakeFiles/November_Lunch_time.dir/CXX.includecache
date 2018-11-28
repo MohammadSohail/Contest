@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Contest/Code Chef/November Lunch time/1.cpp
+iostream
+-
+
+E:/Contest/Code Chef/November Lunch time/main.cpp
+iostream
+-
+

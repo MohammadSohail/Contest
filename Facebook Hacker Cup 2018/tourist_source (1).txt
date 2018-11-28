@@ -1,0 +1,48 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+typedef long long ll;
+
+vector<string> vec;
+vector<int> fin;
+
+int main ()
+{
+    freopen("tourist.txt", "r", stdin);
+    freopen("tourist_out.txt", "w", stdout);
+    int t, cs=0, i, j;
+    ll n, v, k;
+    string s;
+    cin >> t;
+    while (t--)
+    {
+        vec.clear();
+        fin.clear();
+        cs++;
+        cin >> n >> k >> v;
+        for (i=0; i<n; i++)
+        {
+            cin >> s;
+            vec.push_back(s);
+        }
+        for (i=0; i<n; i++)
+        {
+            vec.push_back(vec[i]);
+        }
+        ll now = k*(v-1);
+        now %= n;
+        cout << "Case #" << cs << ":";
+        for (i=now; i<now+k; i++)
+        {
+            fin.push_back(i%n);
+        }
+        sort (fin.begin(), fin.end());
+        for (i=0; i<k; i++)
+        {
+            cout << " " << vec[fin[i]];
+        }
+        cout << endl;
+    }
+    return 0;
+}
